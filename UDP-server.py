@@ -24,7 +24,6 @@ def main():
         currentTime+=str(curTimeStamp)
         serverSocket.sendto(currentTime.encode(),clientAddress)
         print("Sending timestamp back to client!")
-        serverSocket.close()
         
     
 
