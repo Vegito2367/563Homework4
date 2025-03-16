@@ -14,7 +14,7 @@ def main():
     serverSocket.bind(('',serverPort))
     print("UDP server is ready to receive! Listening on port:",serverPort)
     while True:
-        message, clientAddress = serverSocket.recvfrom(2048)
+        message, clientAddress = serverSocket.recvfrom(4096)
         if(message):
             print("Received UDP packet from client!")
         currentTime = datetime.datetime.now()
