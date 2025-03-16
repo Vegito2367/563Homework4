@@ -22,7 +22,7 @@ def main():
 
     print("Received Time Stamp:",serverUTCTime)
     print("Local client time:",clientUTC)
-    print("Latency:", clientTimeStamp - float(servermsTime))
+    print("Latency:", abs(clientTimeStamp - float(servermsTime)))
     print("RTT:",(receiveTime.timestamp()-sentTimestamp.timestamp())*1000)
 
 
